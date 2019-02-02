@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XQTestZero' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for XQTestZero
+
+  target 'XQTestZeroTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'XQTestZeroUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+# 指定本地地址, 相对地址和绝对地址都可以
+pod 'XQTestTool', :path => '../XQTestTool'
+pod 'XQTestResource', :path => '../XQTestResource'
+pod 'XQTestFramework', :path => '../XQTestFramework'
+pod 'XQTestLib', :path => '../XQTestLib'
+
+end

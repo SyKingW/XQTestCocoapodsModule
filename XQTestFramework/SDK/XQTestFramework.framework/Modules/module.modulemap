@@ -1,0 +1,6 @@
+framework module XQTestFramework {
+  umbrella header "XQTestFramework.h"
+
+  export *
+  module * { export * }
+}
